@@ -1,11 +1,17 @@
-Test Amazon.com.au displaying products
-Запуск:
-docker-compose stop && docker-compose build && docker-compose up -d
-Посмотреть репорт:
-docker pull masterandrey/docker-allure
-bash generate_report.sh
+**Test Amazon.com.au displaying products**
 
-Несколько мыслей по заданию:
+Запуск:
+
+_docker-compose stop && docker-compose build && docker-compose up -d_
+
+Посмотреть репорт:
+
+_docker pull masterandrey/docker-allure_
+
+_bash generate_report.sh_
+
+**Несколько мыслей по заданию:**
+
 у списка продуктов на amazon.com.au урл формируется не так, как описано в задании, поэтому тест всегда валится.
 Мало того, периодически он формируется вообще как попало, поэтому валится и проверка ASIN иногда. Это я, наверняка,
 еще не все тонкости встретил.
