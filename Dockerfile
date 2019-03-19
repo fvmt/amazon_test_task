@@ -35,4 +35,4 @@ COPY . $APP_HOME/
 
 RUN pip3 install -r requirements.txt
 #CMD tail -f /dev/null
-CMD py.test example.py --alluredir=/allure-results
+CMD py.test tests.py --alluredir=/allure-results
